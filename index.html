@@ -89,7 +89,7 @@
         </div>
 
         <div id="card-container">
-          <div id="card1" class="card">
+          <div id="card1" class="card" data-tilt>
             <div class="overlay">
               <h4>TOPTRACER RANGE</h4>
               <p>
@@ -223,6 +223,13 @@
       </div>
     </div>
 
+    <script src="vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+      });
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
       integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
